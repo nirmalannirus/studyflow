@@ -837,6 +837,30 @@ footer {
     background: #dddddd;
     color: #111111;
 }
+/* Today's date */
+.clay-calendar-day.today {
+    outline: 2px solid #111;
+    outline-offset: -3px;
+    font-weight: 700;
+}
+
+/* Dates before today */
+.clay-calendar-day.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.clay-calendar-day.disabled:hover {
+    transform: none;
+}
+
+/* Disabled previous-month button */
+.clay-calendar-nav.disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+    pointer-events: none;
+}
 /* ========================================
    RESPONSIVE
    ======================================== */
